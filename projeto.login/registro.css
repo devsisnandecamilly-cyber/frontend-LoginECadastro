@@ -1,0 +1,56 @@
+body{
+    background-image: url(img/imagemfundo/Design\ sem\ nome\ \(7\).png);
+
+}
+h1{
+    color: rgb(17, 17, 90);
+}
+.input-box select {
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border: 2px solid rgba(0, 0, 0, 0.25);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px;
+    outline: none;
+    font-size: 16px;
+    color: rgb(63, 58, 58);
+    padding: 0 45px 0 20px;
+    appearance: none; 
+}
+
+.input-box select:invalid {
+    color: rgb(100, 104, 104);
+}
+.select-box {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 20px;
+}
+
+.select-box select {
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border: 2px solid rgba(0, 0, 0, 0.25);
+    outline: none;
+    font-size: 16px;
+    color: rgb(90, 76, 76);
+    padding: 0 45px 0 20px;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+.select-box select:invalid {
+    color: rgb(100, 104, 104); 
+}
+
+.select-box i {
+    position: absolute;
+    right: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+    pointer-events: none;
+}

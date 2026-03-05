@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="styles.css" />
+  <title>Cadastro de Usuário</title>
+</head>
+<body>
+  <main>
+    <form>
+      <h1>Vamos criar sua conta! </h1>
+      <h3>seus dados são essênciais para criação da sua conta.</h3>
+
+      <div class="input-box">
+        <input type="text" placeholder="Nome completo" required />
+        <i class="bx bxs-user"></i>
+      </div>
+
+      <div class="input-box">
+        <input type="number" placeholder="Idade" required min="0" />
+        <i class="bx bxs-calendar"></i>
+      </div>
+       <div class="input-box">
+      <input type="date" required />
+      <i class="bx bxs-calendar"></i>
+    </div>
+
+      <div class="input-box">
+        <select required>
+          <option value="" disabled selected>Selecione o sexo</option>
+          <option value="masculino">Masculino</option>
+          <option value="feminino">Feminino</option>
+          <option value="outro">Outro</option>
+        </select>
+        <i class="bx bxs-user-detail"></i>
+      </div>
+
+      <div class="input-box">
+        <input type="email" placeholder="E-mail" required />
+        <i class="bx bxs-envelope"></i>
+      </div>
+
+      <div class="input-box">
+        <input type="password" placeholder="Senha" required />
+        <i class="bx bxs-lock-alt"></i>
+      </div>
+
+      <button type="submit" class="btn-login">Cadastrar</button></a>
+      <div class="paginaInicial">
+        <p>Já tem uma conta? <a href="index.html">Entrar</a></p>
+      </div>
+    
+
+    </form>
+  </main>
+</body>
+</html>
+<style>
+  body{
+    background-image: url(imgregistro\ \(2\).png);
+}
+h1{
+    color: #11115a;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+h3{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+.input-box select {
+    width: 100%;
+    height: 100%;
+    background-color:transparent;
+    border: 2px solid rgba(0, 0, 0, 0.25);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px;
+    outline: none;
+    font-size: 16px;
+    color: rgb(63, 58, 58);
+    padding: 0 45px 0 20px;
+    appearance: none; 
+}
+
+.input-box select:invalid {
+    color: rgb(100, 104, 104);
+}
+.select-box {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 20px;
+}
+
+.select-box select {
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border: 2px solid rgba(0, 0, 0, 0.25);
+    outline: none;
+    font-size: 16px;
+    color: rgb(90, 76, 76);
+    padding: 0 45px 0 20px;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+.select-box select:invalid {
+    color: rgb(100, 104, 104); 
+}
+
+.select-box i {
+    position: absolute;
+    right: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+    pointer-events: none;
+}
+.input-box input,
+.input-box select {
+  font-size: 15px;
+  padding: 10px 15px;
+  border-radius: 8px;
+  border: 2px solid rgba(0, 0, 0, 0.25);
+  background: transparent;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.input-box input:focus,
+.input-box select:focus {
+  border-color: #11115a;
+  box-shadow: 0 0 6px rgba(17, 17, 90, 0.4);
+}
+/* placeholders mais leves e discretos */
+.input-box input::placeholder {
+  font-size: 13px;       /* menor que o texto normal */
+  color: #777;           /* cinza suave */
+  font-style: italic;    /* opcional, deixa mais clean */
+}
+form {
+  max-width: 400px;      /* largura máxima */
+  margin: 50px auto;     /* centralizado na tela */
+  padding: 30px;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  text-align: center;
+}
+
+form h1, form h3 {
+  margin-bottom: 15px;
+}
+
+.input-box {
+  position: relative;
+  margin: 15px 0;
+}
+
+.input-box i {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #444;
+}
+
+.btn-login {
+  width: 100%;
+  padding: 12px;
+  margin-top: 20px;
+  border: none;
+  border-radius: 8px;
+  background-color: #11115a;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+  box-shadow:none;
+}
+
+.btn-login:hover {
+  background-color: #1b1b7a;
+  transform: scale(1.02); /* leve efeito ao passar o mouse */
+}
+
+
+</style>

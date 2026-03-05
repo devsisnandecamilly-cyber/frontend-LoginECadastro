@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>pagina de login</title>
+</head>
+
+<body>
+    <main class="container">
+        <form>
+            <h1>login usuario</h1>
+            <div class="input-box">
+                <input placeholder="usuario" type="email">
+                <i class="bx bxs-user"></i>
+            </div>
+            <div class="input-box">
+                <input placeholder="senha" type= 'password'>
+                <i class="bx bxs-lock-alt"></i>
+            </div>
+
+            <div class="remember-forgot">
+                <label>
+                    <input type="checkbox">
+                    lembrar minha senha
+                </label>
+                <a href="#">esqueci minha senha</a> 
+            </div>
+                      <button type="submit" class="btn-login">login</button>
+            <div class="paginaInicial"> 
+                <p>nao tem uma conta <a href="resgistro.html">cadastre-se</a></p>
+            </div>
+        </form>
+<style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background-image:url(imglogin.png)
+
+    }
+
+    .container {
+      width: 100%;
+      max-width: 400px;
+      background: rgba(247, 244, 244, 0.9);
+      border-radius: 12px;
+      padding: 40px 30px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+    }
+
+    .container h1 {
+      text-align: center;
+      font-size: 28px;
+      font-weight: 800;
+      color: #11115a;
+      margin-bottom: 20px;
+    }
+
+    .input-box {
+      position: relative;
+      margin-bottom: 20px;
+    }
+
+    .input-box input {
+      width: 100%;
+      padding: 12px 45px 12px 15px;
+      border: 1.5px solid #ccc;
+      border-radius: 8px;
+      font-size: 15px;
+      outline: none;
+      transition: all 0.3s ease;
+    }
+
+    .input-box input:focus {
+      border-color: #11115a;
+      box-shadow: 0 0 6px rgba(17,17,90,0.3);
+    }
+
+    .input-box input::placeholder {
+      color: #888;
+      font-size: 14px;
+    }
+
+    .input-box i {
+      position: absolute;
+      right: 15px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: #555;
+      font-size: 20px;
+    }
+
+    .remember-forgot {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 14px;
+      margin-bottom: 20px;
+    }
+
+    .remember-forgot a {
+      text-decoration: none;
+      color: #11115a;
+      font-weight: 500;
+    }
+
+    .remember-forgot a:hover {
+      text-decoration: underline;
+    }
+
+    .btn-login {
+      width: 100%;
+      padding: 12px;
+      border: none;
+      border-radius: 8px;
+      background: #11115a;
+      color: #fff;
+      font-size: 16px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .btn-login:hover {
+      background: #1b1b7a;
+      transform: scale(1.02);
+    }
+
+    .paginaInicial {
+      text-align: center;
+      margin-top: 15px;
+      font-size: 14px;
+    }
+
+    .paginaInicial a {
+      color: #11115a;
+      font-weight: 500;
+      text-decoration: none;
+    }
+
+    .paginaInicial a:hover {
+      text-decoration: underline;
+    }
+  </style>
